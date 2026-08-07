@@ -70,6 +70,12 @@
   status = 200
   to = "/.netlify/functions/api/:splat"
 
+# Map base path assets to actual file locations
+[[redirects]]
+  from = "/plano-de-saude-pet-control/*"
+  to = "/:splat"
+  status = 200
+
 # SPA fallback - serve index.html for all unmatched routes
 [[redirects]]
   from = "/*"
