@@ -301,7 +301,7 @@ export default function Index() {
             </a>
             <a
               id="btn-header-especialista-mobile"
-              href="https://api.whatsapp.com/send?phone=551133360600&text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20sa%C3%BAde%20Pet%20da%20WeVets"
+              href="https://api.whatsapp.com/send?phone=551133360600&text=1-Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20sa%C3%BAde%20Pet%20da%20WeVets"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => analyticsEvents.clickMenuEspecialista()}
@@ -559,7 +559,7 @@ export default function Index() {
             </a>
             <a
               id="btn-header-especialista-desktop"
-              href="https://api.whatsapp.com/send?phone=551133360600&text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20sa%C3%BAde%20Pet%20da%20WeVets"
+              href="https://api.whatsapp.com/send?phone=551133360600&text=1-Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20sa%C3%BAde%20Pet%20da%20WeVets"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => analyticsEvents.clickMenuEspecialista()}
@@ -3096,7 +3096,7 @@ export default function Index() {
               {/* WhatsApp Button */}
               <a
                 id="btn-proteja-seu-pet-whatsapp"
-                href="https://api.whatsapp.com/send?phone=551133360600&text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20sa%C3%BAde%20Pet%20da%20WeVets"
+                href="https://api.whatsapp.com/send?phone=551133360600&text=1-Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20sa%C3%BAde%20Pet%20da%20WeVets"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => analyticsEvents.clickDuvidasFalarWhatsapp()}
