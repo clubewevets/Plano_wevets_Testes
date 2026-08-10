@@ -74,7 +74,7 @@ export default function Index() {
     // Open WhatsApp after a brief delay to ensure event is tracked
     setTimeout(() => {
       window.open(
-        "https://api.whatsapp.com/send?phone=551133360600&text=Olá%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20saúde%20Pet%20da%20WeVets",
+        "https://api.whatsapp.com/send?phone=551133360600&text=1-Olá%2C%20gostaria%20de%20conhecer%20os%20planos%20de%20saúde%20Pet%20da%20WeVets",
         "_blank",
       );
     }, 200);
