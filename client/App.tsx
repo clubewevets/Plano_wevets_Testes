@@ -34,7 +34,7 @@ const AppContent = () => {
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <BrowserRouter>
+          <BrowserRouter basename="/plano-de-saude-pet-wv1">
             <PageTracker />
             <Routes>
               <Route path="/" element={<Index />} />

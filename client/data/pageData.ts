@@ -26,7 +26,7 @@ export const STATS = [
 export const PLANS = [
   {
     name: "Rotina",
-    priceMonthly: "7,45",
+    priceMonthly: "14,90",
     priceAnnual: "149,00",
     description: "Cuidados básicos: ideal para filhotes, pets saudáveis e manter a saúde em dia.",
     note: "",
