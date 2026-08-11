@@ -775,32 +775,37 @@ export default function Index() {
                   )}
                   {!plan.popular && (
                     <div className="flex flex-col gap-1">
-                      {!(plan.name === "Rotina" && billingPeriod === "mensal") && (
-                        <div className="bg-[#D0E8FF] px-2 py-0.5 rounded">
-                          <span
-                            className="text-[#0066CC] text-[11px] font-bold uppercase tracking-tight whitespace-nowrap"
-                            style={{ letterSpacing: "0.5px" }}
-                          >
-                            {billingPeriod === "mensal" ? (
-                              <>
-                                {plan.name === "Conforto"
+                      <div
+                        className="bg-[#D0E8FF] px-2 py-0.5 rounded"
+                        style={
+                          plan.name === "Rotina" && billingPeriod === "mensal"
+                            ? { visibility: "hidden" }
+                            : undefined
+                        }
+                      >
+                        <span
+                          className="text-[#0066CC] text-[11px] font-bold uppercase tracking-tight whitespace-nowrap"
+                          style={{ letterSpacing: "0.5px" }}
+                        >
+                          {billingPeriod === "mensal" ? (
+                            <>
+                              {plan.name === "Conforto"
+                                ? "50% OFF 4 meses"
+                                : plan.name === "Super" || plan.name === "Ultra"
                                   ? "50% OFF 4 meses"
-                                  : plan.name === "Super" || plan.name === "Ultra"
-                                    ? "50% OFF 4 meses"
-                                    : ""}
-                              </>
-                            ) : (
-                              <>
-                                {plan.name === "Rotina" || plan.name === "Conforto"
-                                  ? "2 meses off"
-                                  : plan.name === "Super" || plan.name === "Ultra"
-                                    ? "2 meses OFF"
-                                    : ""}
-                              </>
-                            )}
-                          </span>
-                        </div>
-                      )}
+                                  : " "}
+                            </>
+                          ) : (
+                            <>
+                              {plan.name === "Rotina" || plan.name === "Conforto"
+                                ? "2 meses off"
+                                : plan.name === "Super" || plan.name === "Ultra"
+                                  ? "2 meses OFF"
+                                  : ""}
+                            </>
+                          )}
+                        </span>
+                      </div>
                       {plan.name === "Ultra" && (
                         <div className="bg-[#BDE3CA] px-2 py-0.5 rounded flex items-center justify-center gap-1">
                           <Check className="w-3 h-3 text-[#0B5F3F]" />
@@ -817,6 +822,19 @@ export default function Index() {
                 </div>
 
                 {/* Old Price Strikethrough */}
+                {plan.name === "Rotina" && billingPeriod === "mensal" && (
+                  <div style={{ marginBottom: "0px", visibility: "hidden" }} aria-hidden="true">
+                    <s
+                      style={{
+                        display: "inline",
+                        fontWeight: "400",
+                        color: "rgb(6, 41, 91)",
+                      }}
+                    >
+                      &nbsp;
+                    </s>
+                  </div>
+                )}
                 {plan.name === "Rotina" && billingPeriod === "anual" && (
                   <div style={{ marginBottom: "0px" }}>
                     <s
@@ -1242,35 +1260,40 @@ export default function Index() {
                   )}
                   {!plan.popular && (
                     <div className="flex flex-col gap-1">
-                      {!(plan.name === "Rotina" && billingPeriod === "mensal") && (
-                        <div className="bg-[#D0E8FF] px-2 py-1 rounded text-[11px]">
-                          <span
-                            className="text-[#0066CC] font-bold uppercase whitespace-nowrap"
-                            style={{
-                              letterSpacing: "0.5px",
-                              fontFamily: "Peridot PE Variable, sans-serif",
-                            }}
-                          >
-                            {billingPeriod === "mensal" ? (
-                              <>
-                                {plan.name === "Conforto"
+                      <div
+                        className="bg-[#D0E8FF] px-2 py-1 rounded text-[11px]"
+                        style={
+                          plan.name === "Rotina" && billingPeriod === "mensal"
+                            ? { visibility: "hidden" }
+                            : undefined
+                        }
+                      >
+                        <span
+                          className="text-[#0066CC] font-bold uppercase whitespace-nowrap"
+                          style={{
+                            letterSpacing: "0.5px",
+                            fontFamily: "Peridot PE Variable, sans-serif",
+                          }}
+                        >
+                          {billingPeriod === "mensal" ? (
+                            <>
+                              {plan.name === "Conforto"
+                                ? "50% OFF 4 meses"
+                                : plan.name === "Super" || plan.name === "Ultra"
                                   ? "50% OFF 4 meses"
-                                  : plan.name === "Super" || plan.name === "Ultra"
-                                    ? "50% OFF 4 meses"
-                                    : ""}
-                              </>
-                            ) : (
-                              <>
-                                {plan.name === "Rotina" || plan.name === "Conforto"
-                                  ? "2 meses off"
-                                  : plan.name === "Super" || plan.name === "Ultra"
-                                    ? "2 meses OFF"
-                                    : ""}
-                              </>
-                            )}
-                          </span>
-                        </div>
-                      )}
+                                  : " "}
+                            </>
+                          ) : (
+                            <>
+                              {plan.name === "Rotina" || plan.name === "Conforto"
+                                ? "2 meses off"
+                                : plan.name === "Super" || plan.name === "Ultra"
+                                  ? "2 meses OFF"
+                                  : ""}
+                            </>
+                          )}
+                        </span>
+                      </div>
                       {plan.name === "Ultra" && (
                         <div className="bg-[#BDE3CA] px-2 py-1 rounded text-[11px] flex items-center justify-center gap-1">
                           <Check className="w-3.5 h-3.5 text-[#0B5F3F]" />
@@ -1291,6 +1314,19 @@ export default function Index() {
 
                 {/* Price Section */}
                 <div className="flex flex-col gap-3 w-full md:min-h-[85px]">
+                  {plan.name === "Rotina" && billingPeriod === "mensal" && (
+                    <div style={{ marginTop: "7px", visibility: "hidden" }} aria-hidden="true">
+                      <s
+                        style={{
+                          color: "rgb(6, 41, 91)",
+                          display: "inline",
+                          fontWeight: "400",
+                        }}
+                      >
+                        &nbsp;
+                      </s>
+                    </div>
+                  )}
                   {plan.name === "Rotina" && billingPeriod === "anual" && (
                     <div style={{ marginTop: "7px" }}>
                       <s
