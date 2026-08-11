@@ -976,7 +976,7 @@ export default function Index() {
                 {/* CTA Button */}
                 <a
                   id={`btn-plan-${plan.name.toLowerCase()}-${billingPeriod}`}
-                  href="https://planowevets.com.br/login?origin=control"
+                  href="https://planowevets.com.br/login"
                   onClick={(e) => {
                     e.preventDefault();
                     const destinationUrl = e.currentTarget.href;
@@ -1471,7 +1471,7 @@ export default function Index() {
                 {/* CTA Button */}
                 <a
                   id={`btn-plan-${plan.name.toLowerCase()}-${billingPeriod}`}
-                  href="https://planowevets.com.br/login?origin=control"
+                  href="https://planowevets.com.br/login"
                   onClick={(e) => {
                     e.preventDefault();
                     const destinationUrl = e.currentTarget.href;
