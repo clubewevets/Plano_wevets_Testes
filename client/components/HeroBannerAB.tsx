@@ -7,6 +7,8 @@ import {
 } from "@/hooks/useAmplitude";
 import { useExperimentVariant } from "@/hooks/ExperimentContext";
 import { analyticsEvents } from "@/utils/analyticsEvents";
+import heroConfortoDesktop from "@/assets/hero-conforto-desktop.webp";
+import heroConfortoMobile from "@/assets/hero-conforto-mobile.webp";
 
 /**
  * HeroBannerAB - Componente que renderiza variantes diferentes
@@ -136,7 +138,7 @@ export function HeroBannerAB() {
 
               {/* Hero Image - Below subtitle on Mobile */}
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fad3b24e0eebc41a888274aae2381ca13%2F28a84ac6adb5454990150589c6a85192?format=webp&width=720&height=900"
+                src={heroConfortoMobile}
                 alt="Promoção WeVets"
                 className="w-full h-auto"
                 fetchPriority="high"
@@ -198,8 +200,7 @@ export function HeroBannerAB() {
           style={{
             backgroundColor: "#06295B",
             height: "636px",
-            backgroundImage:
-              "url(https://cdn.builder.io/api/v1/image/assets%2Fad3b24e0eebc41a888274aae2381ca13%2F4ef48102ffb14739bb3dd603b44d4cf7?format=webp&width=1440&height=800)",
+            backgroundImage: `url(${heroConfortoDesktop})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -365,7 +366,7 @@ export function HeroBannerAB() {
 
               {/* Hero Image - Below subtitle on Mobile */}
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fad3b24e0eebc41a888274aae2381ca13%2F28a84ac6adb5454990150589c6a85192?format=webp&width=720&height=900"
+                src={heroConfortoMobile}
                 alt="Promoção WeVets"
                 className="w-full h-auto"
                 fetchPriority="high"
@@ -427,8 +428,7 @@ export function HeroBannerAB() {
           style={{
             backgroundColor: "#06295B",
             height: "636px",
-            backgroundImage:
-              "url(https://cdn.builder.io/api/v1/image/assets%2Fad3b24e0eebc41a888274aae2381ca13%2F4ef48102ffb14739bb3dd603b44d4cf7?format=webp&width=1440&height=800)",
+            backgroundImage: `url(${heroConfortoDesktop})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
